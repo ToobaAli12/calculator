@@ -1,0 +1,230 @@
+body{
+    background-color: rgb(41, 39, 36);
+}
+
+#calculator-body{
+    background-color: rgb(221, 219, 219);
+    margin: auto;
+    width: 320px;
+    height: 450px;
+    border-radius: 5px 5px 30px 5px;
+    box-shadow: 0 0 50px #333;
+}
+
+/* lines at the top of the calculator */
+#doubleLines{
+    display: flex;
+    width: 320px;
+}
+
+#line1{
+    background-color: rgb(190, 94, 94);
+    height: 10px;
+    width: 2px;
+    margin-left: 7%;
+    box-shadow: inset 0px 0px 5px #c7c7c7;
+}
+
+#line2{
+    background-color: rgb(221, 219, 219);
+    height: 10px;
+    width: 2px;
+    margin-left: 85%;
+    box-shadow: inset 0px 0px 5px #c7c7c7;
+}
+
+#topLine{
+    height: 2px;
+    width: 320px;
+    background-color: rgb(221, 219, 219);
+    margin-bottom: 10px;
+    box-shadow: inset 0px 0px 5px #c7c7c7;
+    
+}
+
+#bottomLine{
+    height: 1px;
+    width: 320px;
+    background-color: rgb(209, 206, 206);
+    margin-bottom: 10px;
+    
+}
+
+/* container for the battery light and text */
+#batteryHolder{
+    width: 40px;
+    padding-top: 40px;
+    margin-left: 5px;
+}
+
+#batteryLight{
+    width: 5px;
+    height: 5px;
+    background-color: rgb(165, 164, 164);
+    border-radius: 5px 5px 5px 5px;
+    margin-left: 20%;
+}
+
+/* Text for the batter light */
+#battery{
+    font-size: 6px;
+    margin: auto;
+    padding-top: 4px;
+    color: rgb(238, 236, 236);
+}
+
+/* The grey border around the screen */
+#screenDisplayBorder{
+    display: flex;
+    border: 1px solid grey;
+    border-radius: 5px 5px 25px 5px;
+    margin: auto;
+    margin-bottom: 5px;
+    width: 280px;
+    height: 155px;
+    background-color: grey;
+    flex-direction: row;
+    box-shadow: inset 0px 0px 7px #c7c7c7;
+}
+
+/* Container holding the two divs that make up the top and bottom of the screen */
+#screenDisplayContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+/* the actual screen for the calculator */
+#screenDisplay1{
+    background-color: rgb(5, 126, 1); 
+    width: 200px;
+    height: 45px;
+    margin-top: 10px;
+    margin-left: -3px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+#screenDisplay2{
+    background-color: rgb(5, 126, 1);    
+    width: 200px;
+    height: 90px;
+    margin-left: -3px;
+    font-size: 200%;
+    
+    display: flex;
+    justify-content: flex-end !important;
+    align-items: flex-end !important;
+}
+
+#screenDisplayText{
+    float: right !important;
+}
+
+#logo{
+    margin-bottom: 10px;
+    margin-left: 6%;
+    display: flex;
+}
+
+#TM{
+    font-size: 50%;
+    margin-left: 1px;
+    margin-top: 7px;
+}
+
+/* container for the calculator buttons */
+#buttonHolder{
+    margin: auto;
+    width: 220px;
+    flex-direction: row; 
+    padding: 5px;
+    padding-left: 15px;
+    box-shadow: inset 0px 0px 5px #c7c7c7;
+    border-radius: 20px 20px 20px 20px;
+    margin-bottom: 30px;
+}
+
+.buttons{
+    margin-bottom: 3px;
+    background-color: #8b0162;
+    color: white;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-color: #acacac;
+    border-radius: 40px 40px 40px 40px;
+    outline:none;
+}
+
+#powerButtons{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 120px;
+}
+
+.startSelectText{
+    margin-top: 12px;
+}
+
+#selectIndentation{
+    position: relative;
+    margin-top: -2px;
+    margin-left: -2px;
+    background-color: rgb(221, 219, 219);
+    width: 35px;
+    box-shadow: inset 0px 0px 2px rgb(145, 144, 144);
+    border-radius: 10px 10px 10px 10px;
+    height: 12px;
+    z-index: 1;
+    transform: rotate(-30deg);
+}
+
+#startIndentation{
+    position: relative;
+    margin-left: 8px;
+    margin-top: -2px;
+    background-color: rgb(221, 219, 219);
+    width: 35px;
+    box-shadow: inset 0px 0px 2px rgb(145, 144, 144);
+    border-radius: 10px 10px 10px 10px;
+    height: 12px;
+    z-index: 1;
+    transform: rotate(-30deg);
+}
+
+ #select{
+     position: absolute;
+    width: 30px;
+    height: 7px;
+    transform: rotate(-30deg);
+    background-color: grey;   
+    border-radius: 10px 10px 10px 10px;
+    font-size: 50%;
+    color: rgb(77, 52, 218);
+    text-align: right;
+    outline:none;
+    padding:0px;
+    font-stretch: wider;
+    z-index: 2;
+}
+
+#startContainer{
+    margin-left: 2px;
+}
+
+#start{
+    position: absolute;
+    width: 30px;
+    height: 7px;
+    transform: rotate(-30deg);
+    background-color: grey;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 10px !important;
+    font-size: 50%;
+    color: rgb(77, 52, 218);    
+    text-decoration: none;
+    outline:none;
+    padding:0px;
+    z-index: 2;
+}

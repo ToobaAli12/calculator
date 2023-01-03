@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html><head>
+    <link rel="stylesheet" type="text/css" href="cal.css">
+  <title>Calculator Boy</title>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <!-- div for the calculator's body -->
+  <div id="calculator-body">
+    
+    <!-- lines for top of calculator -->
+    <!-- 2 horizontal lines -->
+    <div id="doubleLines">
+      <div id="line1"></div>
+      <div id="line2"></div>
+    </div>
+    <!-- 1 vertical line -->
+    <div id="topLine"></div>
+  
+
+      <!-- creates the grey border around the screen -->
+      <div id="screenDisplayBorder">
+          <!-- creates the battery text and light -->
+          <div id="batteryHolder">
+            <div id="batteryLight"></div>
+            <div id="battery">BATTERY</div>
+          </div>
+
+          <div id="screenDisplayContainer">
+            
+            <div id="screenDisplay1">
+              <div id="screenTextTop"></div>
+            </div>
+
+            <div id="screenDisplay2">
+              <div id="screenTextBottom"></div>
+            </div>
+
+          </div>
+      </div>
+      <!-- logo for calculator boy -->
+      <div id="logo">CALCULATOR  <div id="TM">TM</div></div>
+      <!-- div containter to house the buttons -->
+      <div id="buttonHolder">
+            <button class="buttons" id="C">C</button>
+            <button class="buttons" id="CE">CE</button>
+            <button class="buttons" id="del" >del</button>
+            <button class="buttons" id="/">/</button>
+            <button class="buttons" id="7">7</button>
+            <button class="buttons" id="8">8</button>
+            <button class="buttons" id="9">9</button>
+            <button class="buttons" id="*">*</button>
+            <button class="buttons" id="4">4</button>
+            <button class="buttons" id="5">5</button>
+            <button class="buttons" id="6">6</button>
+            <button class="buttons" id="+">+</button>
+            <button class="buttons" id="1">1</button>
+            <button class="buttons" id="2">2</button>
+            <button class="buttons" id="3">3</button>
+            <button class="buttons" id="-">-</button>
+            <button class="buttons" id="+/-">+/-</button>
+            <button class="buttons" id="0">0</button>
+            <button class="buttons" id=".">.</button>
+            <button class="buttons" id="=">=</button>          
+          </div>
+
+          <div id="powerButtons">
+            <div id="selectIndentation"></div>
+            <button id="select"><p class="startSelectText"><b>RESET</b></p></button>
+            
+            <div id="startContainer">
+              <button id="start"><p class="startSelectText"><b>POWER</b></p></button>
+              <div id="startIndentation"></div>
+            </div>
+          </div>
+
+  </div>
+    <script src="calc.js"></script>
+</body>
+</html>
